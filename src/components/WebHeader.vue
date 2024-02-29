@@ -19,7 +19,7 @@ function toggleTheme() {
     <template v-slot:prepend>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
-    <v-toolbar-title>Vue templates</v-toolbar-title>
+    <v-toolbar-title>Blogs</v-toolbar-title>
     <template v-slot:append>
       <v-btn icon="mdi-theme-light-dark" @click="toggleTheme"></v-btn>
     </template>
