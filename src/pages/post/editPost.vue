@@ -11,7 +11,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      res: null
+      res: null as null | string | string[]
     }
   },
   created() {
