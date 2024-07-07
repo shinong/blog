@@ -28,12 +28,17 @@ let showMenu = ref(false)
     </template>
   </v-app-bar>
 
-  <v-navigation-drawer color="primary" theme="dark" dense v-model="showMenu">
+  <v-navigation-drawer color="primary" dense v-model="showMenu">
     <v-list color="transparent">
-      <v-list-item prepend-icon="mdi-pencil" title="Dashboard"></v-list-item>
-      <v-list-item prepend-icon="mdi-account-box" title="Account"></v-list-item>
-      <v-list-item prepend-icon="mdi-gavel" title="Admin"></v-list-item>
-      <v-list-item prepend-icon="mdi-video-box" title="media" to="/media"></v-list-item>
+      <v-list-item prepend-icon="mdi-pencil" title="MainPage" value="mainpage" to="/"></v-list-item>
+      <v-list-item prepend-icon="mdi-account-box" title="Account" value="account"></v-list-item>
+      <v-list-item prepend-icon="mdi-gavel" title="Admin" value="admin"></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-video-box"
+        title="Media"
+        value="media"
+        to="/media"
+      ></v-list-item>
     </v-list>
 
     <template v-slot:append>
