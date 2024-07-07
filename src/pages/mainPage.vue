@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import WebHeader from '@/components/WebHeader.vue'
-import WebMenu from '@/components/WebMenu.vue'
+import WebHeaderAndMenu from '@/components/WebHeaderAndMenu.vue'
 </script>
 <template>
   <v-layout>
-    <WebHeader></WebHeader>
-    <WebMenu></WebMenu>
+    <WebHeaderAndMenu></WebHeaderAndMenu>
     <v-main>
       <router-view></router-view>
     </v-main>

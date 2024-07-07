@@ -30,55 +30,18 @@
 </template>
 
 <script lang="ts">
-import image from '@/images/zhiyue.jpg'
 import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      imageSource: image,
+      imageSource: '',
       posts: [
         {
           id: '1',
-          location: 'Huludao',
-          date: '2024-02-10',
-          content: 'This is the first day I meet with Shinong',
+          location: 'Waterloo',
+          date: '2024-07-07',
+          content: 'Hello world',
           liked: 'true'
-        },
-        {
-          id: '2',
-          location: 'Huludao',
-          date: '2024-02-11',
-          content: 'Today I had a dinner with Shinong and we went to a movie together.',
-          liked: 'false'
-        },
-        {
-          id: '3',
-          location: 'Huludao',
-          date: '2024-02-12',
-          content:
-            'I went to the old town of Xincheng and the Xincheng Beach, we had lots of nice photoes and memories!',
-          liked: 'false'
-        },
-        {
-          id: '4',
-          location: 'Huludao',
-          date: '2024-02-14',
-          content: 'Aaaaaaaa, I got rose flowrs and presents from Shinong. What should I do!',
-          liked: 'true'
-        },
-        {
-          id: '5',
-          location: 'Huludao',
-          date: '2024-02-15',
-          content: 'Wow, we saw the fireworks together. Really enjoy the show tonight',
-          liked: 'true'
-        },
-        {
-          id: '6',
-          location: 'Nanjing',
-          date: '2024-02-17',
-          content: 'So sad, I have to go back to work......',
-          liked: 'false'
         }
       ]
     }

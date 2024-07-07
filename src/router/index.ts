@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import editPost from '@/pages/post/editPost.vue'
+import vedioCaptureVue from '@/pages/media/vedioCapture.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -14,6 +15,10 @@ const router = createRouter({
       path: '/postedit/:postid',
       name: 'post',
       component: editPost
+    },
+    {
+      path: '/media',
+      component: vedioCaptureVue
     }
   ]
 })
