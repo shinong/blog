@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
   <v-container>
+    <v-row>
+      <v-col>
+        <p>Test placeholder, currently running on {{ env }}</p>
+      </v-col>
+    </v-row>
     <v-row v-for="post in posts" :key="post.id">
       <v-col>
         <v-card>
@@ -29,22 +32,16 @@
   </v-container>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-  data() {
-    return {
-      imageSource: '',
-      posts: [
-        {
-          id: '1',
-          location: 'Waterloo',
-          date: '2024-07-07',
-          content: 'Hello world',
-          liked: 'true'
-        }
-      ]
-    }
+<script lang="ts" setup>
+const posts = [
+  {
+    id: '1',
+    location: 'Waterloo',
+    date: '2024-07-07',
+    content: 'Hello world',
+    liked: 'true'
   }
-})
+]
+const imageSource = ''
+const env = import.meta.env.VITE_APP_Title
 </script>

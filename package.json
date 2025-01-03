@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build:stage": "cross-env NODE_ENV=stage vite build --mode stage",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
@@ -16,6 +17,7 @@
     "@formkit/tailwindcss": "^1.5.9",
     "@formkit/vue": "^1.5.1",
     "axios": "^1.6.5",
+    "cross-env": "^7.0.3",
     "pinia": "^2.1.7",
     "upgrade": "^1.1.0",
     "vue": "^3.3.4",
